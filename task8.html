@@ -33,7 +33,18 @@
             </div>
             <div class="mb-3">
                 <label for="inputHobbies" class="form-label">Hobbies</label>
-                <input type="text" class="form-control" id="inputHobbies">
+                <!-- dropdown for any five hobbies -->
+                <select class="form-select" aria-label="Default select example" id="inputHobbies" required>
+                    <option selected disabled value="">--select--</option>
+                    <option value="1">Reading</option>
+                    <option value="2">Writing</option>
+                    <option value="3">Coding</option>
+                    <option value="4">Singing</option>
+                    <option value="5">Dancing</option>
+                </select>
+                <div class="invalid-feedback">
+                    Hobbies is required.
+                </div>
             </div>
             <div>
                 <button type="submit" class="btn btn-danger w-100">Submit</button>
